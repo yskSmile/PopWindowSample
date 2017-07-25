@@ -202,6 +202,9 @@ public class ShowPopWindowActivity extends AppCompatActivity implements View.OnL
         }
     }
 
+    /**
+     *当界面布局变化时 会调用此方法
+     */
     @Override
     public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
         if (popupWindow != null && popupWindow.isShowing()) {
