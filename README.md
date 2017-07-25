@@ -2,5 +2,6 @@
 
  前沿：
  最近在用popwindow时，使用showAsDropDown显示列表数据时出现了方法设置后出现内容错乱的问题。如下图
+ https://github.com/yskSmile/PopWindowSample/tree/master/file
  
   
