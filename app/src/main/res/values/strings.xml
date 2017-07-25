@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PopWindowText</string>
+    <string name="text_drop_down">showAsDropDown</string>
+    <string name="text_as_location">showAsLocation</string>
+</resources>
