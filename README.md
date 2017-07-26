@@ -1,9 +1,9 @@
-# 关于popWindow的一些发现
+# 关于popWindow使用时的一些发现
 
 ## 前言
  最近在使用popWindow显示列表时出现一些问题 就深入研究研究了一下。
  
-问题 android7.0出现的popWindow中showAsDropDown在popWindow全屏显示时方法无效。
+问题：android7.0出现的popWindow中showAsDropDown在popWindow全屏显示时方法无效。
 
  关于这个问题我们可以使用popWindow的另一个方法 showAsLocation来实现 具体下面也会说到。
 另外在使用网易邮箱大师时感觉它的添加账号显示下拉列表效果不错，就研究了一下。效果为popWindow的高度可根据
