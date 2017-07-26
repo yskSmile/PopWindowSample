@@ -71,6 +71,7 @@ public class ShowPopWindowActivity extends AppCompatActivity implements View.OnL
         editText.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
+                //点击软键盘enter键处理
                 if (keyCode == KeyEvent.KEYCODE_ENTER) {
                     if (v instanceof EditText) {
                         EditText editText = (EditText) v;
@@ -167,7 +168,7 @@ public class ShowPopWindowActivity extends AppCompatActivity implements View.OnL
     }
 
     /**
-     * 设置高度并且显示PopupWindow
+     * 计算设置高度并且显示PopupWindow
      *
      * @param
      */
@@ -179,7 +180,6 @@ public class ShowPopWindowActivity extends AppCompatActivity implements View.OnL
         int appLayoutHeight = ViewUtils.getAppLayoutHeight(this);
         //获取状态栏高度
         int statusBarHeight = ViewUtils.getStatusBarHeight(this);
-
         //显示基线以下高度 -11是 线有1dp popWindow显示在基线以下10dp
         int height = appLayoutHeight + statusBarHeight - mLocation[1] - 11;
         //计算listView高度
@@ -189,7 +189,7 @@ public class ShowPopWindowActivity extends AppCompatActivity implements View.OnL
         int listHeight = ViewUtils.getListHeight(listView) + paddingSum + marginSum;
         //listView高度小于height高度 展示高度是listview高度 相反为可见高度
         int canShowHeight = height > listHeight ? listHeight : height;
-        //若可见高度大于800 则只显示800
+        //若可见高度大于800 则只显示800 可根据需求更改
         if (canShowHeight > 800) {
             canShowHeight = 800;
         }
