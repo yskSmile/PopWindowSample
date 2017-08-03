@@ -9,6 +9,7 @@ import android.text.Selection;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -83,6 +84,7 @@ public class ShowPopWindowActivity extends AppCompatActivity implements View.OnL
                                 popupWindow.dismiss();
                             }
                             editText.setFocusable(false);
+
                         }
                     }
                     return true;
